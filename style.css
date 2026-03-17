@@ -1,0 +1,41 @@
+body{
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
+}
+
+.topbar{
+position:fixed;
+top:0;
+width:100%;
+background:#000;
+padding:10px;
+z-index:1000;
+}
+
+.topbar button{
+margin:5px;
+padding:8px;
+cursor:pointer;
+}
+
+.table-container{
+margin-top:80px;
+height:calc(100vh - 80px);
+overflow-y:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td,th{
+border:1px solid #444;
+padding:6px;
+}
+
+td{
+background:#222;
+}
