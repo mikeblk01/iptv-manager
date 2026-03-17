@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IPTV Manager PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<input type="text" id="fileInput" placeholder="Ej: lista1.m3u">
+<button onclick="loadLocal()">Cargar Lista</button>
+<button onclick="selectAll()">Seleccionar Todo</button>
+<button onclick="removeSelected()">Eliminar</button>
+<button onclick="addManual()">+ Canal</button>
+<button onclick="checkAll()">Verificar</button>
+<button onclick="exportM3U()">Descargar</button>
+<button onclick="generateLink()">Generar Link</button>
+<button onclick="saveToGitHub()">Guardar en GitHub</button>
+</div>
+
+<div class="table-container">
+<table id="channels">
+<thead>
+<tr>
+<th>✔</th>
+<th>Nombre</th>
+<th>EPG</th>
+<th>Grupo</th>
+<th>Logo</th>
+<th>URL</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
